@@ -8,6 +8,13 @@ const startRace = (runners) => {
     const results = assignTime(top3);
     raceLog(results);
 }
+
+
+function raceLog(results)
+{
+ console.log `congrats ! ${results[0].name} is the first place with ${results[0].time} the second place is ${results[1].name} with 
+ ${results[1].name} and the third place ${results[0].name} with ${results[0].time}`
+}
 function assignTime(racers) {
     let speed = [];
     const min = 50;
@@ -27,3 +34,5 @@ function assignTime(racers) {
     speed.push({ name: racers[2], time: thirdRandomNumber });
     return speed;
   }
+
+  const runners =["aa","bb","cc","dd" ,"ee","ff","gg","hh","ii","jj"];
